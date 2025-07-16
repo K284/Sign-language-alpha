@@ -85,11 +85,11 @@ def classify_letter(fingers):
         return 'S'
     elif fingers == [0, 0, 1, 0, 0]:
         return 'T'
-    elif fingers == [0, 1, 1, 0, 0]:
+    elif fingers == [0, 0, 1, 0, 1]:
         return 'U'
     elif fingers == [0, 1, 1, 1, 0]:
         return 'V'
-    elif fingers == [0, 1, 1, 1, 1]:
+    elif fingers == [0, 0, 0, 1, 0]:
         return 'W'
     elif fingers == [1, 0, 1, 0, 0]:
         return 'X'
