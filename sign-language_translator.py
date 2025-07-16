@@ -49,38 +49,57 @@ def classify_letter(fingers):
         return 'A'
     elif fingers == [0, 1, 1, 1, 1]:
         return 'B'
-    elif fingers == [1, 1, 1, 1, 1]:
+    elif fingers == [0, 1, 1, 0, 0]:
         return 'C'
     elif fingers == [0, 1, 0, 0, 0]:
         return 'D'
     elif fingers == [0, 0, 0, 0, 1]:
         return 'E'
-    elif fingers == [1, 0, 0, 0, 0]:
-        return 'F'
     elif fingers == [1, 1, 0, 0, 0]:
+        return 'F'
+    elif fingers == [1, 1, 1, 0, 0]:
+        return 'G'
+    elif fingers == [1, 1, 1, 1, 0]:
+        return 'H'
+    elif fingers == [0, 1, 0, 0, 0]:
+        return 'I'
+    elif fingers == [1, 1, 0, 0, 1]:
+        return 'J'
+    elif fingers == [0, 1, 0, 1, 1]:
+        return 'K'
+    elif fingers == [1, 0, 0, 0, 0]:
         return 'L'
-    elif fingers == [1, 0, 0, 0, 1]:
-        return 'Y'
+    elif fingers == [1, 1, 0, 0, 1]:
+        return 'M'
+    elif fingers == [1, 1, 1, 0, 1]:
+        return 'N'
+    elif fingers == [0, 1, 1, 1, 1]:
+        return 'O'
+    elif fingers == [1, 1, 0, 1, 0]:
+        return 'P'
+    elif fingers == [1, 1, 0, 1, 1]:
+        return 'Q'
+    elif fingers == [0, 1, 0, 1, 0]:
+        return 'R'
+    elif fingers == [0, 1, 1, 0, 0]:
+        return 'S'
+    elif fingers == [0, 1, 1, 1, 0]:
+        return 'T'
     elif fingers == [0, 1, 1, 0, 0]:
         return 'U'
     elif fingers == [0, 1, 1, 1, 0]:
-        return 'W'
-    elif fingers == [1, 1, 0, 1, 1]:
         return 'V'
+    elif fingers == [0, 1, 1, 1, 1]:
+        return 'W'
     elif fingers == [1, 0, 1, 0, 1]:
-        return 'K'
-    elif fingers == [0, 1, 0, 1, 0]:
-        return 'N'
-    elif fingers == [1, 1, 0, 0, 1]:
-        return 'R'
-    elif fingers == [1, 1, 1, 0, 0]:
-        return 'H'
-    elif fingers == [0, 1, 1, 0, 1]:
-        return 'M'
-    elif fingers == [1, 0, 1, 1, 0]:
-        return 'Z'  # optional, if you can detect motion
+        return 'X'
+    elif fingers == [1, 0, 0, 0, 1]:
+        return 'Y'
+    elif fingers == [1, 1, 1, 1, 1]:
+        return 'Z'
+    else:
+        return ''
 
-    return ''
 
 
 while True:
