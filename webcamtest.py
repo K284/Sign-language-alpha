@@ -1,3 +1,4 @@
+# to check whether the webcam is working or not
 import cv2
 
 cap = cv2.VideoCapture(0)
