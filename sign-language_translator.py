@@ -14,6 +14,10 @@ hands = mp_hands.Hands(
 
 cap = cv2.VideoCapture(0)
 
+# Set webcam resolution 
+cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1280)
+cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 720)
+
 prev_letter = ''
 recognized_text = ''
 last_time = time.time()
