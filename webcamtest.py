@@ -1,4 +1,11 @@
 # to check whether the webcam is working or not
+""" opencv-python for camera
+
+mediapipe for hand detection
+
+numpy for simple math (already bundled)
+
+"""
 import cv2
 
 cap = cv2.VideoCapture(0)
