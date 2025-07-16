@@ -49,20 +49,39 @@ def classify_letter(fingers):
         return 'A'
     elif fingers == [0, 1, 1, 1, 1]:
         return 'B'
+    elif fingers == [1, 1, 1, 1, 1]:
+        return 'C'
+    elif fingers == [0, 1, 0, 0, 0]:
+        return 'D'
+    elif fingers == [0, 0, 0, 0, 1]:
+        return 'E'
+    elif fingers == [1, 0, 0, 0, 0]:
+        return 'F'
     elif fingers == [1, 1, 0, 0, 0]:
         return 'L'
     elif fingers == [1, 0, 0, 0, 1]:
         return 'Y'
-    elif fingers == [0, 1, 0, 0, 0]:
-        return 'D'
     elif fingers == [0, 1, 1, 0, 0]:
         return 'U'
     elif fingers == [0, 1, 1, 1, 0]:
         return 'W'
-    elif fingers == [1, 1, 1, 1, 1]:
-        return 'Space'
-    else:
-        return ''
+    elif fingers == [1, 1, 0, 1, 1]:
+        return 'V'
+    elif fingers == [1, 0, 1, 0, 1]:
+        return 'K'
+    elif fingers == [0, 1, 0, 1, 0]:
+        return 'N'
+    elif fingers == [1, 1, 0, 0, 1]:
+        return 'R'
+    elif fingers == [1, 1, 1, 0, 0]:
+        return 'H'
+    elif fingers == [0, 1, 1, 0, 1]:
+        return 'M'
+    elif fingers == [1, 0, 1, 1, 0]:
+        return 'Z'  # optional, if you can detect motion
+
+    return ''
+
 
 while True:
     ret, frame = cap.read()
