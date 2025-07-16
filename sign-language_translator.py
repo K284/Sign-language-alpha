@@ -61,29 +61,29 @@ def classify_letter(fingers):
         return 'G'
     elif fingers == [1, 1, 1, 1, 0]:
         return 'H'
-    elif fingers == [0, 1, 0, 0, 0]:
+    elif fingers == [0, 1, 0, 0, 1]:
         return 'I'
-    elif fingers == [1, 1, 0, 0, 1]:
+    elif fingers == [1, 0, 0, 0, 1]:
         return 'J'
-    elif fingers == [0, 1, 0, 1, 1]:
+    elif fingers == [0, 1, 0, 1, 0]:
         return 'K'
     elif fingers == [1, 0, 0, 0, 0]:
         return 'L'
-    elif fingers == [1, 1, 0, 0, 1]:
+    elif fingers == [1, 1, 0, 1, 1]:
         return 'M'
     elif fingers == [1, 1, 1, 0, 1]:
         return 'N'
-    elif fingers == [0, 1, 1, 1, 1]:
+    elif fingers == [1, 1, 1, 1, 1]:
         return 'O'
-    elif fingers == [1, 1, 0, 1, 0]:
+    elif fingers == [1, 0, 1, 0, 1]:
         return 'P'
-    elif fingers == [1, 1, 0, 1, 1]:
+    elif fingers == [1, 0, 1, 1, 0]:
         return 'Q'
-    elif fingers == [0, 1, 0, 1, 0]:
+    elif fingers == [0, 1, 1, 0, 1]:
         return 'R'
-    elif fingers == [0, 1, 1, 0, 0]:
+    elif fingers == [0, 1, 0, 1, 1]:
         return 'S'
-    elif fingers == [0, 1, 1, 1, 0]:
+    elif fingers == [0, 0, 1, 0, 0]:
         return 'T'
     elif fingers == [0, 1, 1, 0, 0]:
         return 'U'
@@ -91,14 +91,15 @@ def classify_letter(fingers):
         return 'V'
     elif fingers == [0, 1, 1, 1, 1]:
         return 'W'
-    elif fingers == [1, 0, 1, 0, 1]:
+    elif fingers == [1, 0, 1, 0, 0]:
         return 'X'
-    elif fingers == [1, 0, 0, 0, 1]:
+    elif fingers == [1, 0, 0, 1, 0]:
         return 'Y'
-    elif fingers == [1, 1, 1, 1, 1]:
+    elif fingers == [1, 1, 0, 0, 1]:
         return 'Z'
     else:
         return ''
+
 
 
 
