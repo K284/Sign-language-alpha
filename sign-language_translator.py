@@ -63,7 +63,7 @@ def classify_letter(fingers):
 while True:
     ret, frame = cap.read()
     if not ret:
-        print("❌ Failed to grab frame.")
+        print("Failed to grab frame.")
         break
 
     frame = cv2.flip(frame, 1)
@@ -93,7 +93,7 @@ while True:
     cv2.putText(frame, f'Text: {recognized_text}', (10, 450),
                 cv2.FONT_HERSHEY_SIMPLEX, 1.2, (255, 0, 0), 3)
 
-    cv2.imshow("🤟 Sign Language Recognizer", frame)
+    cv2.imshow("Sign Language Recognizer", frame)
 
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
